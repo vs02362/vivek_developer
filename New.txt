@@ -1,0 +1,1 @@
+arrow functions, maps, arrays, bind, call, apply, rest, spread, default, function constructor
