@@ -1,5 +1,7 @@
-p1{
-    color: blue;
-    
-
+.p1{
+    text-align: center;
 }
+
+p{
+    text-decoration: underline;
+}     

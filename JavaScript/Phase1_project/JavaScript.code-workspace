@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "JavaScript",
+			"path": "../vivek_developer/JavaScript"
+		},
+		{
+			"name": "vivek_developer",
+			"path": "../vivek_developer"
+		}
+	],
+	"settings": {
+		"search.exclude": {
+			"": true
+		},
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "msedge",
+				"name": "`Escape'",
+				"request": "launch",
+				"url": "`Escape'"
+			}
+		]
+	}
+}

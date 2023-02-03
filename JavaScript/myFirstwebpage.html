@@ -1,38 +1,57 @@
+
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title> vivek</title>
-
+        <title>My First Web page</title>
 
         <style>
-
             #p1{
-                color:rgb(183, 43, 226)
-                border-style darkblue;
-                border-color: black;
+                color:red;
+                font-size: 20px;
             }
+            .cls1{
+                color:green;
+            }               
+
         </style>
 
-        <link rel="stylesheet" href="style.css" />
+        <!--External CSS-->
+        <link rel="stylesheet" href="style.css">
+
+
     </head>
 
     <body>
+        <div>
+            <p id="p1" class="cls1">Welcome to my Website</p>
+            <h1 class="cls1 cls2 cls3" id="">Heading 1</h1>    
+        </div>
 
-        <p id="p1">
+         <p class="cls1">Thanks for visiting us!!!</p>
 
-            WELCOME👌
-        </p>
+         <button onclick="onButtonClicked()">Click to Change</button>
+        
+         <!-- Internal JavaScript-->
+        <script>
+            //document.getElementById("p1").innerHTML = "Changed by JS";
+        </script>
 
-        <p>
-            NAMASTE 😘
-
-        </p>
-        <img src="scooter1.jpg" height="200" width="200" />
-
-
-        Enter name: <input type="text " /> 
-
+        <!-- External JS-->
+        <script src="script.js"></script>
     </body>
-
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+/*common style*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family:"jura",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+ 
+
+
+/*End of common style*/
+
+/*Mouse Circle*/
+
+.mouse-Circle,
+.mouse-Dot{
+border-radius: 50%;
+    position: fixed;
+    z-index: 300;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.mouse-Circle{
+    width: 5rem;
+    height:5rem;
+    border: 0.15rem solid #c7a622;
+    animation:  mouseCircleAnim 10s
+    infinite linear;
+
+}
+@keyframes mouseCircleAnim{
+0%{
+  width:6rem;
+  height:6rem;
+}
+25%{
+ width:8rem;
+ height:8rem;
+}
+35%{
+ width:4rem;
+ height:4rem;
+}
+70%{
+ width:8rem;
+ height:8rem;
+}
+100%{
+ width:6rem;
+ height:6rem;
+}
+}
+    
+.mouse-Dot{
+    width: .5rem;
+    height: .5rem;
+    background-color: #9b0e0e;
+    animation:  mouseDotAnim 10s infinite linear ;
+}
+@keyframes mouseDotAnim{
+    0%{
+        width:.5rem;
+        height:.5rem;
+    }
+    55%{
+        width: 1.5%;
+        height: 1.5rem;
+    }
+    100%{
+        width: 0.5%;
+        height: 0.5%;
+
+    }
+}    
+/*End Of Mouse Circle*/
+
+/*Page BG*/
+.page-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(Images/gyms/brand.jpg)center no-repeat;
+    background-size: cover;
+}
+/*End of Page BG*/
+
+/* Section 1*/
+.section-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Logo*/
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*End Of Logo*/
+
+/* Animated Circle*/
+.circles{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.circle{
+    width: 14rem;
+    height:14rem;
+    border-radius: 100%;
+    background-color: red;
+    align-self: center;
+    justify-self: center;
+    opacity:.3;
+}
+.circle-1{
+    background: url(images/gyms/a1.jpg)center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.15rem dotted #a14b1a ;
+
+}
+
+.circle-2{
+    background: url(images/gyms/a2.jpg)center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.1rem dashed #ffbd07;
+}
+.circle-3{
+    background: url(images/gyms/a3.jpg)center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.2rem double #9b0e0e ;
+}
+.circle-4{
+    background: url(images/gyms/a4.jpg)center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+      border: .1rem double #ffb ;
+}
+.main-circle{
+    width: 22.5rem;
+    height:22.5rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius:50%;   
+}
+.main-circle img{
+    mix-blend-mode:exclusion;
+}
+
+/* End Of Animated Circle*/
+
+/*Featured Text*/
+.featured-text{
+    font-size: 1.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    width: 0;
+    word-wrap: break-word;
+    line-height: 2.4;
+    position: sticky;
+    top: 0;
+}
+.featured-text-1{
+    margin: 0 auto 0 12rem;
+}
+.featured-text-2{
+    margin: 0 12rem 0 auto;
+}
+/*End of Featured Text*/
+
+
+/* End of Section 1*/
